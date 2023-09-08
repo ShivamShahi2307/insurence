@@ -6,18 +6,20 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        elevation: 0,
-        leading: const Icon(
-          Icons.arrow_back,
-          size: 30,
-          color: Colors.white,
-        ),
-        centerTitle: true,
-        title: const Text("Top Insurence"),
-        actions: [
-          IconButton(
+    return SafeArea(
+      child: Scaffold(
+        backgroundColor: Colors.black,
+        appBar: AppBar(
+          elevation: 0,
+          leading: const Icon(
+            Icons.arrow_back,
+            size: 30,
+            color: Colors.white,
+          ),
+          centerTitle: true,
+          title: const Text("Top Insurence"),
+          actions: [
+            IconButton(
               onPressed: () {
                 Navigator.push(
                   context,
@@ -30,12 +32,11 @@ class HomePage extends StatelessWidget {
                 Icons.more_vert_outlined,
                 size: 30,
                 // color: Colors.white,
-              ))
-        ],
-      ),
-      backgroundColor: Colors.black,
-      body: SafeArea(
-        child: Column(
+              ),
+            ),
+          ],
+        ),
+        body: Column(
           children: [
             //containers
             Container(
