@@ -15,7 +15,7 @@ class ShopPlan extends StatelessWidget {
         body: SingleChildScrollView(
           child: Center(
             child: Padding(
-              padding: const EdgeInsets.only(bottom: 30),
+              padding: const EdgeInsets.only(bottom: 20),
               child: Container(
                 padding:
                     const EdgeInsets.symmetric(horizontal: 10, vertical: 15),
@@ -188,24 +188,22 @@ class ShopPlan extends StatelessWidget {
                           ),
                         ),
                         ElevatedButton(
-                            style: ElevatedButton.styleFrom(
-                              padding: const EdgeInsets.symmetric(
-                                horizontal: 50,
-                                vertical: 0,
-                              ),
-                              side: const BorderSide(
-                                  color: Colors.white, width: .9),
-                              backgroundColor: Colors.yellowAccent,
-                              shape: const StadiumBorder(),
-                            ),
-                            onPressed: () {},
-                            child: const Text(
-                              'ENQUIRY',
-                              style: TextStyle(
-                                fontWeight: FontWeight.bold,
+                          style: ElevatedButton.styleFrom(
+                            padding: const EdgeInsets.symmetric(
+                                horizontal: 50, vertical: 00),
+                            side: const BorderSide(
+                                width: .9, color: Colors.white),
+                            backgroundColor: Colors.yellowAccent,
+                            shape: const StadiumBorder(),
+                          ),
+                          onPressed: () {},
+                          child: const Text(
+                            'ENQUIARY',
+                            style: TextStyle(
                                 color: Colors.black,
-                              ),
-                            )),
+                                fontWeight: FontWeight.bold),
+                          ),
+                        ),
                       ],
                     )
                   ],

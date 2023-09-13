@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:insurence/homepage.dart';
 
 void main() {
-  runApp(myApp());
+  runApp(const myApp());
 }
 
 class myApp extends StatelessWidget {
@@ -12,9 +12,9 @@ class myApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      home: const HomePage(),
       theme: ThemeData(
-          appBarTheme: AppBarTheme(
+          appBarTheme: const AppBarTheme(
               foregroundColor: Colors.white, backgroundColor: Colors.black)),
     );
   }

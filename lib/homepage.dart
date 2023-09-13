@@ -36,7 +36,7 @@ class HomePage extends StatelessWidget {
             ],
           ),
           body: ListView.builder(
-              itemCount: 5,
+              itemCount: 8,
               itemBuilder: (context, int index) {
                 return Container(
                   // height: 110,
